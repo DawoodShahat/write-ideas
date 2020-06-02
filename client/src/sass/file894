@@ -1,0 +1,19 @@
+@import "mixins";
+
+.textfield {
+  @include primary-textinput();
+}
+
+.textfield-wrapper {
+  display: flex;
+
+  label {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-right: 0.4rem;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,33 @@
+@mixin primary-button {
+  width: 100px;
+  height: 40px;
+
+  background: #75d273;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8em;
+
+  text-transform: capitalize;
+}
+
+@mixin primary-textinput {
+  width: 262px;
+  height: 32px;
+
+  background: #fff9f9;
+  color: #000;
+
+  font-size: 0.9em;
+  padding-left: 0.2rem;
+
+  border-radius: 7px;
+}
+
+@mixin centerXY {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

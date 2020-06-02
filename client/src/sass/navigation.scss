@@ -1,0 +1,99 @@
+$primary-color: #49e0bc;
+
+@import "./mixins";
+
+.nav {
+  background-color: $primary-color;
+  width: 100%;
+  padding: 1rem 0;
+  @include centerXY();
+  justify-content: space-between;
+
+  .branding {
+    margin-left: 0.8rem;
+  }
+
+  .textfield-wrapper {
+    align-items: center;
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .nav-item {
+    margin-right: 1.5rem;
+  }
+
+  .forgot-password {
+    display: flex;
+    align-items: center;
+  }
+
+  .validation-msg,
+  .forgot-password {
+    margin-top: 0.3rem;
+  }
+
+  p {
+    margin: 0 0.5rem 0 0;
+  }
+}
+
+.btn {
+  @include primary-button();
+  @include centerXY();
+
+  &.login-btn {
+    background: #fff;
+    color: #000;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+}
+
+// @import "input";
+
+@media (max-width: 1224px) {
+  .welcome-section {
+    display: none;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-left: 0;
+  }
+
+  .nav {
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start;
+    background-color: #fff;
+
+    .nav-item {
+      margin-bottom: 1rem;
+    }
+
+    .textfield-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+
+      label {
+        color: #000;
+      }
+    }
+    .branding {
+      margin: 0;
+      padding: 1rem 0;
+      background: $primary-color;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.dropdown-nav {
+  display: flex;
+  align-items: center;
+
+  .dashboard {
+    margin-right: 2rem;
+  }
+
+  .dashboard ul,
+  .user ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    margin-top: 0.1px;
+  }
+
+  .dashboard:hover ul,
+  .user:hover ul {
+    display: block;
+    background: #49e0bc;
+  }
+
+  .btn-user,
+  .btn-dashboard {
+    display: flex;
+    align-items: center;
+    margin-right: 1.8rem;
+  }
+
+  span {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .drop-btn {
+    background: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .dashboard ul li:hover,
+  .user ul li:hover {
+    background: rgba(0, 125, 95, 1);
+  }
+
+  .dropdown-btn {
+    font-size: 1em;
+    width: 130px;
+    color: #fff;
+    padding: 0.5rem 2.5rem 0.5rem 0.3rem;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  margin-right: 3rem;
+}
