@@ -40,7 +40,7 @@ app.use(express.json());
 
 app.use(
   session({
-    secret: process.env.SESSION_SECRET,
+    secret: "secret working or not",
     resave: false,
     saveUninitialized: false,
   })
